@@ -1,0 +1,14 @@
+#!/data/data/com.termux/files/usr/bin/bash
+set -e
+
+USB_PATH=$(termux-usb -l | grep -o '"/dev[^"]*"' | tr -d '"' | head -n1)
+
+if [ -z "$USB_PATH" ]; then
+    echo "USB cihazı bulunamadı. Adaptör bağlı mı?"
+    exit 1
+fi
+
+export PYTHONPATH="$HOME/fakepkgs:$HOME/wifit3/src"
+cd "$HOME/wifit3"
+
+termux-usb -r -e "python run_wifit3.py" "$USB_PATH"
