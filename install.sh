@@ -3,7 +3,7 @@ set -e
 
 echo "== Termux paketleri kuruluyor =="
 pkg update -y
-pkg install -y python git libusb
+pkg install -y python git libusb termux-api
 
 echo "== wifit3 klonlanıyor =="
 if [ ! -d "$HOME/wifit3" ]; then
@@ -29,4 +29,7 @@ if ! grep -q 'HOME/bin' "$HOME/.bashrc" 2>/dev/null; then
     echo 'export PATH="$HOME/bin:$PATH"' >> "$HOME/.bashrc"
 fi
 
-echo "== Tamamlandı. Yeni terminal açıp 'wifit3-run' yaz. =="
+source "$HOME/.bashrc"
+
+echo "== Tamamlandı. 'wifit3-run' yazarak çalıştırabilirsin. =="
+echo "== NOT: Termux:API Android uygulamasını (Play Store/F-Droid) ayrıca kurman ve USB izni vermen gerekiyor. =="
