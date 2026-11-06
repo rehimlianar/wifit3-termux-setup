@@ -11,4 +11,6 @@ source ~/.bashrc
 ```
 
 ## Çalıştırma
+```bash
 wifit3-run
+```
