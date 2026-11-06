@@ -49,6 +49,23 @@ Install the Termux:API package: `pkg install termux-api`. Make sure the Termux:A
 - On some ROMs, USB host mode only activates after a reboot — try rebooting with the adapter connected.
 - Make sure the Termux:API app has been granted permission when prompted.
 
+
+## Screenshots
+
+
+![ss1](Screenshot_20261106_164538_edit_695422467147164.jpg)
+
+
+
+
+![ss2](Screenshot_20261106_164605.jpg)
+
+
+
+
+![ss3](Screenshot_20261106_164625.jpg)
+
+
 ## Uninstalling
 
 ```bash
