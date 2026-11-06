@@ -7,6 +7,7 @@ RTL8812AU gibi adaptörlerle root'suz Termux'ta wifit3 çalıştırmak için kur
 git clone https://github.com/rehimlianar/wifit3-termux-setup.git ~/wifit3-termux-setup
 cd ~/wifit3-termux-setup
 bash install.sh
+source ~/.bashrc
 ```
 
 ## Çalıştırma
