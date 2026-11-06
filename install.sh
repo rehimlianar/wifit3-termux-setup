@@ -7,7 +7,7 @@ pkg install -y python git libusb
 
 echo "== wifit3 klonlanıyor =="
 if [ ! -d "$HOME/wifit3" ]; then
-    git clone https://github.com/derv82/wifit3.git "$HOME/wifit3"
+    git clone https://github.com/rehimlianar/wifit3.git "$HOME/wifit3"
 fi
 
 echo "== Python bağımlılıkları kuruluyor =="
