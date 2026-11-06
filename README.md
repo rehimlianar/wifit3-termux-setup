@@ -1,4 +1,4 @@
-# wifit3 Termux Without Root
+# wifit3 Termux Setup
 
 Setup for running [wifit3](https://github.com/derv82/wifit3) on rootless Termux with adapters like the RTL8812AU.
 
@@ -24,8 +24,8 @@ This setup bridges that gap:
 
 ## Installation
 ```bash
-git clone https://github.com/rehimlianar/wifit3-termux-without-root.git ~/wifit3-termux-without-root
-cd ~/wifit3-termux-without-root
+git clone https://github.com/rehimlianar/wifit3-termux-setup.git ~/wifit3-termux-setup
+cd ~/wifit3-termux-setup
 bash install.sh
 source ~/.bashrc
 ```
@@ -52,7 +52,7 @@ Install the Termux:API package: `pkg install termux-api`. Make sure the Termux:A
 ## Uninstalling
 
 ```bash
-rm -rf ~/wifit3-termux-without-root
+rm -rf ~/wifit3-termux-setup
 rm -rf ~/wifit3
 rm -rf ~/fakepkgs
 rm -f ~/bin/wifit3-run
